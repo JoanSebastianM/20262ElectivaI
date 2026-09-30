@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad - tabla</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        th,
+        td {
+            border: 1px solid #000;
+            padding: 4px 12px;
+        }
+
+        /* Las imagenes van en la misma linea porque img es un elemento inline */
+        figure img + img {
+            margin-left: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Una tabla ejemplo</caption>
+        <thead>
+            <tr>
+                <th scope="col">Primer encabezado</th>
+                <th colspan="2" scope="colgroup">Segundo encabezado</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>arriba a la izquierda</td>
+                <td></td>
+                <td rowspan="2">arriba a la derecha</td>
+            </tr>
+            <tr>
+                <td>abajo a la izquierda</td>
+                <td>abajo en el medio</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <figure>
+        <img src="imagenes/logo-wikipedia.svg" alt="Wikipedia" width="140">
+        <img src="imagenes/logo-wikipedia.svg" alt="Wikipedia" width="140">
+        <figcaption>Dos logos de Wikipedia</figcaption>
+    </figure>
+</body>
+
+</html>
